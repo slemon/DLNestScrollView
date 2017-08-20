@@ -1,0 +1,17 @@
+PODS:
+  - MJRefresh (3.1.12)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - MJRefresh
+  - YYCategories
+
+SPEC CHECKSUMS:
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 3d5db60325268c2e2ec1a9bc21dc8f04f89cd7e3
+
+COCOAPODS: 1.1.1

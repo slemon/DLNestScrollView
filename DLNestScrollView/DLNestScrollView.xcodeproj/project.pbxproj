@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90659EC36DF6FA44882720CA /* libPods-DLNestScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1873DE92983549D489B6640F /* libPods-DLNestScrollView.a */; };
+		F4CC96C91F49384000EEACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96C81F49384000EEACE6 /* main.m */; };
+		F4CC96CC1F49384000EEACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96CB1F49384000EEACE6 /* AppDelegate.m */; };
+		F4CC96CF1F49384000EEACE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96CE1F49384000EEACE6 /* ViewController.m */; };
+		F4CC96D21F49384000EEACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC96D01F49384000EEACE6 /* Main.storyboard */; };
+		F4CC96D51F49384000EEACE6 /* DLNestScrollView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96D31F49384000EEACE6 /* DLNestScrollView.xcdatamodeld */; };
+		F4CC96D71F49384000EEACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC96D61F49384000EEACE6 /* Assets.xcassets */; };
+		F4CC96DA1F49384000EEACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC96D81F49384000EEACE6 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1873DE92983549D489B6640F /* libPods-DLNestScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLNestScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88E80F030CD9616851BD211 /* Pods-DLNestScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLNestScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLNestScrollView/Pods-DLNestScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BA77180E3C0A0B8B55A482 /* Pods-DLNestScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLNestScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLNestScrollView/Pods-DLNestScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		F4CC96C41F49384000EEACE6 /* DLNestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLNestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CC96C81F49384000EEACE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4CC96CA1F49384000EEACE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4CC96CB1F49384000EEACE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4CC96CD1F49384000EEACE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4CC96CE1F49384000EEACE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4CC96D11F49384000EEACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4CC96D41F49384000EEACE6 /* DLNestScrollView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DLNestScrollView.xcdatamodel; sourceTree = "<group>"; };
+		F4CC96D61F49384000EEACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4CC96D91F49384000EEACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4CC96DB1F49384000EEACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4CC96C11F49384000EEACE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90659EC36DF6FA44882720CA /* libPods-DLNestScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		247C9AC3B2CDB6AED159D9EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1873DE92983549D489B6640F /* libPods-DLNestScrollView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30325F09626ACD55D6184A71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D88E80F030CD9616851BD211 /* Pods-DLNestScrollView.debug.xcconfig */,
+				E8BA77180E3C0A0B8B55A482 /* Pods-DLNestScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4CC96BB1F49384000EEACE6 = {
+			isa = PBXGroup;
+			children = (
+				F4CC96C61F49384000EEACE6 /* DLNestScrollView */,
+				F4CC96C51F49384000EEACE6 /* Products */,
+				30325F09626ACD55D6184A71 /* Pods */,
+				247C9AC3B2CDB6AED159D9EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4CC96C51F49384000EEACE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC96C41F49384000EEACE6 /* DLNestScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4CC96C61F49384000EEACE6 /* DLNestScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC96CA1F49384000EEACE6 /* AppDelegate.h */,
+				F4CC96CB1F49384000EEACE6 /* AppDelegate.m */,
+				F4CC96CD1F49384000EEACE6 /* ViewController.h */,
+				F4CC96CE1F49384000EEACE6 /* ViewController.m */,
+				F4CC96D01F49384000EEACE6 /* Main.storyboard */,
+				F4CC96D61F49384000EEACE6 /* Assets.xcassets */,
+				F4CC96D81F49384000EEACE6 /* LaunchScreen.storyboard */,
+				F4CC96DB1F49384000EEACE6 /* Info.plist */,
+				F4CC96D31F49384000EEACE6 /* DLNestScrollView.xcdatamodeld */,
+				F4CC96C71F49384000EEACE6 /* Supporting Files */,
+			);
+			path = DLNestScrollView;
+			sourceTree = "<group>";
+		};
+		F4CC96C71F49384000EEACE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC96C81F49384000EEACE6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4CC96C31F49384000EEACE6 /* DLNestScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CC96DE1F49384000EEACE6 /* Build configuration list for PBXNativeTarget "DLNestScrollView" */;
+			buildPhases = (
+				9D27386E5424DD2C445BC140 /* [CP] Check Pods Manifest.lock */,
+				F4CC96C01F49384000EEACE6 /* Sources */,
+				F4CC96C11F49384000EEACE6 /* Frameworks */,
+				F4CC96C21F49384000EEACE6 /* Resources */,
+				CC65A735F2A75A02660B6E40 /* [CP] Embed Pods Frameworks */,
+				E29D56CD7BE04DA317B2B90D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLNestScrollView;
+			productName = DLNestScrollView;
+			productReference = F4CC96C41F49384000EEACE6 /* DLNestScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4CC96BC1F49384000EEACE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Dalong;
+				TargetAttributes = {
+					F4CC96C31F49384000EEACE6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3A946D8N5T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4CC96BF1F49384000EEACE6 /* Build configuration list for PBXProject "DLNestScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4CC96BB1F49384000EEACE6;
+			productRefGroup = F4CC96C51F49384000EEACE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4CC96C31F49384000EEACE6 /* DLNestScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4CC96C21F49384000EEACE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC96DA1F49384000EEACE6 /* LaunchScreen.storyboard in Resources */,
+				F4CC96D71F49384000EEACE6 /* Assets.xcassets in Resources */,
+				F4CC96D21F49384000EEACE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D27386E5424DD2C445BC140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC65A735F2A75A02660B6E40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLNestScrollView/Pods-DLNestScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29D56CD7BE04DA317B2B90D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLNestScrollView/Pods-DLNestScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4CC96C01F49384000EEACE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC96CF1F49384000EEACE6 /* ViewController.m in Sources */,
+				F4CC96D51F49384000EEACE6 /* DLNestScrollView.xcdatamodeld in Sources */,
+				F4CC96CC1F49384000EEACE6 /* AppDelegate.m in Sources */,
+				F4CC96C91F49384000EEACE6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4CC96D01F49384000EEACE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CC96D11F49384000EEACE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4CC96D81F49384000EEACE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CC96D91F49384000EEACE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4CC96DC1F49384000EEACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4CC96DD1F49384000EEACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CC96DF1F49384000EEACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88E80F030CD9616851BD211 /* Pods-DLNestScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
+				INFOPLIST_FILE = DLNestScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangxin.DLNestScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4CC96E01F49384000EEACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8BA77180E3C0A0B8B55A482 /* Pods-DLNestScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
+				INFOPLIST_FILE = DLNestScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangxin.DLNestScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4CC96BF1F49384000EEACE6 /* Build configuration list for PBXProject "DLNestScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC96DC1F49384000EEACE6 /* Debug */,
+				F4CC96DD1F49384000EEACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CC96DE1F49384000EEACE6 /* Build configuration list for PBXNativeTarget "DLNestScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC96DF1F49384000EEACE6 /* Debug */,
+				F4CC96E01F49384000EEACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4CC96D31F49384000EEACE6 /* DLNestScrollView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4CC96D41F49384000EEACE6 /* DLNestScrollView.xcdatamodel */,
+			);
+			currentVersion = F4CC96D41F49384000EEACE6 /* DLNestScrollView.xcdatamodel */;
+			path = DLNestScrollView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4CC96BC1F49384000EEACE6 /* Project object */;
+}
