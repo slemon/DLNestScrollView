@@ -21,6 +21,9 @@ static  NSString * kCellIdentifier = @"cell";
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataList;
 @property (nonatomic, assign) CGFloat webviewContentHeight;
+@property (nonatomic, assign) BOOL isWebviewFinishLoad; //是否webview加载完毕
+
+
 @end
 
 @implementation ViewController
@@ -29,15 +32,17 @@ static  NSString * kCellIdentifier = @"cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.view addSubview:self.scrollView];
-    [self.scrollView addSubview:self.webview];
-    [self.scrollView addSubview:self.tableView];
+    self.isWebviewFinishLoad = NO;
     
-    self.webview.scrollView.scrollEnabled = NO;
-    self.tableView.scrollEnabled = NO;
+    //webview 做header view
+    [self addWebViewAsTableHeaderView];
+    
+    //驱动webview滑动
+    [self addDirveScrollView];
+    
     
     //Load Webview
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://mp.weixin.qq.com/s/FH0DjxXJlOu0QRPaYk8r2Q"]];
     [self.webview loadRequest:request];
     
     @weakify(self);
@@ -48,8 +53,28 @@ static  NSString * kCellIdentifier = @"cell";
     self.tableView.mj_footer = footer;
     
     [self requreDataList:YES];
+}
+
+
+- (void)addWebViewAsTableHeaderView {
+    
+    [self.view addSubview:self.scrollView];//此处添加scrollview 是为了比较内存占用
+    [self.view addSubview:self.tableView];
+    self.tableView.tableHeaderView = self.webview;
     
 }
+
+- (void)addDirveScrollView {
+    
+    [self.view addSubview:self.scrollView];
+    [self.scrollView addSubview:self.webview];
+    [self.scrollView addSubview:self.tableView];
+    self.tableView.top = kScreenHeight;
+    self.webview.scrollView.scrollEnabled = NO;
+    self.tableView.scrollEnabled = NO;
+}
+
+
 
 #pragma mark - Methods
 
@@ -76,7 +101,9 @@ static  NSString * kCellIdentifier = @"cell";
 }
 
 - (void)updateScrollViewContentSize {
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.width, self.tableView.contentSize.height + self.webviewContentHeight + self.tableView.contentInset.bottom);
+    //webview 未加载完的时候也支持滑动
+    CGFloat webviewContentHeight = self.isWebviewFinishLoad ?  self.webviewContentHeight : self.webview.height * 10;
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.width, self.tableView.contentSize.height +  webviewContentHeight + self.tableView.contentInset.bottom);
 }
 
 #pragma mark - UITableView DataSource & Delegate
@@ -96,8 +123,19 @@ static  NSString * kCellIdentifier = @"cell";
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
     //获取webview的内容高度
     [webView evaluateJavaScript:@"document.body.offsetHeight;"completionHandler:^(id _Nullable result,NSError *_Nullable error) {
+        
+        
         self.webviewContentHeight = MAX([result doubleValue], self.webview.height);
-        [self updateScrollViewContentSize];
+        
+        if (self.tableView.tableHeaderView) {
+            self.webview.height = self.webviewContentHeight;
+            self.tableView.tableHeaderView = self.webview;
+        }
+        else {
+            self.isWebviewFinishLoad = YES;
+            [self updateScrollViewContentSize];
+        }
+        
     }];
 }
 
@@ -137,7 +175,6 @@ static  NSString * kCellIdentifier = @"cell";
 - (UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _tableView.top = kScreenHeight;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         _tableView.delegate = self;
         _tableView.dataSource = self;

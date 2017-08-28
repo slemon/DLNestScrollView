@@ -15,6 +15,7 @@
 		F4CC96D51F49384000EEACE6 /* DLNestScrollView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96D31F49384000EEACE6 /* DLNestScrollView.xcdatamodeld */; };
 		F4CC96D71F49384000EEACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC96D61F49384000EEACE6 /* Assets.xcassets */; };
 		F4CC96DA1F49384000EEACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC96D81F49384000EEACE6 /* LaunchScreen.storyboard */; };
+		F4CC96E31F497DA300EEACE6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC96E21F497DA300EEACE6 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		F4CC96D61F49384000EEACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4CC96D91F49384000EEACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CC96DB1F49384000EEACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CC96E11F497DA300EEACE6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F4CC96E21F497DA300EEACE6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				F4CC96CB1F49384000EEACE6 /* AppDelegate.m */,
 				F4CC96CD1F49384000EEACE6 /* ViewController.h */,
 				F4CC96CE1F49384000EEACE6 /* ViewController.m */,
+				F4CC96E11F497DA300EEACE6 /* TestViewController.h */,
+				F4CC96E21F497DA300EEACE6 /* TestViewController.m */,
 				F4CC96D01F49384000EEACE6 /* Main.storyboard */,
 				F4CC96D61F49384000EEACE6 /* Assets.xcassets */,
 				F4CC96D81F49384000EEACE6 /* LaunchScreen.storyboard */,
@@ -233,6 +238,7 @@
 				F4CC96D51F49384000EEACE6 /* DLNestScrollView.xcdatamodeld in Sources */,
 				F4CC96CC1F49384000EEACE6 /* AppDelegate.m in Sources */,
 				F4CC96C91F49384000EEACE6 /* main.m in Sources */,
+				F4CC96E31F497DA300EEACE6 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +399,7 @@
 				F4CC96E01F49384000EEACE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
