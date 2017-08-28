@@ -35,7 +35,7 @@ static  NSString * kCellIdentifier = @"cell";
     self.isWebviewFinishLoad = NO;
     
     //webview 做header view
-    [self addWebViewAsTableHeaderView];
+//    [self addWebViewAsTableHeaderView];
     
     //驱动webview滑动
     [self addDirveScrollView];
@@ -69,7 +69,9 @@ static  NSString * kCellIdentifier = @"cell";
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.webview];
     [self.scrollView addSubview:self.tableView];
+    
     self.tableView.top = kScreenHeight;
+    
     self.webview.scrollView.scrollEnabled = NO;
     self.tableView.scrollEnabled = NO;
 }
